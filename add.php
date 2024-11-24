@@ -12,6 +12,8 @@
 
      $sql = "INSERT INTO `student_list`(`firstname`, `lastname`, `gender`) VALUES ('$fname','$lname','$gender')";
         $con ->query($sql) or die ($con->error);
+
+        echo header("Location: index.php");
     }
 
     ?>
